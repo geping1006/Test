@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'adduser' ]
+2 info using npm@3.8.6
+3 info using node@v5.11.0
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:geping1006',
+4 verbose adduser   name: 'geping1006',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: '284225466@qq.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-05-24T01:13:14.356Z' }
+5 verbose request uri https://registry.npmjs.org/-/user/org.couchdb.user:geping1006
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 09:13:14
+8 verbose request id 63c1484ca45d24c5
+9 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:geping1006
+10 http 401 https://registry.npmjs.org/-/user/org.couchdb.user:geping1006
+11 verbose headers { 'content-type': 'application/json',
+11 verbose headers   'cache-control': 'max-age=300',
+11 verbose headers   'content-length': '46',
+11 verbose headers   'accept-ranges': 'bytes',
+11 verbose headers   date: 'Tue, 24 May 2016 01:13:08 GMT',
+11 verbose headers   via: '1.1 varnish',
+11 verbose headers   connection: 'keep-alive',
+11 verbose headers   'x-served-by': 'cache-nrt6135-NRT',
+11 verbose headers   'x-cache': 'MISS',
+11 verbose headers   'x-cache-hits': '0',
+11 verbose headers   'x-timer': 'S1464052388.555864,VS0,VE408',
+11 verbose headers   vary: 'Accept-Encoding' }
+12 verbose request invalidating C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\-\user\org.couchdb.user_3Ageping1006 on PUT
+13 verbose adduser back [ { [Error: Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:geping1006] statusCode: 401, code: 'E401' },
+13 verbose adduser   { ok: false, id: 'org.couchdb.user:undefined' },
+13 verbose adduser   '{"ok":false,"id":"org.couchdb.user:undefined"}' ]
+14 warn adduser Incorrect username or password
+14 warn adduser You can reset your account by visiting:
+14 warn adduser
+14 warn adduser     https://npmjs.org/forgot
+15 verbose stack Error: Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:geping1006
+15 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+15 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+15 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+15 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+15 verbose stack     at emitTwo (events.js:100:13)
+15 verbose stack     at Request.emit (events.js:185:7)
+15 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+15 verbose stack     at emitOne (events.js:95:20)
+15 verbose stack     at Request.emit (events.js:182:7)
+15 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+16 verbose statusCode 401
+17 verbose cwd D:\node\test\somepackage
+18 error Windows_NT 10.0.10586
+19 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "adduser"
+20 error node v5.11.0
+21 error npm  v3.8.6
+22 error code E401
+23 error Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:geping1006
+24 error If you need help, you may report this error at:
+24 error     <https://github.com/npm/npm/issues>
+25 verbose exit [ 1, true ]
