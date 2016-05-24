@@ -1,0 +1,14 @@
+{
+  "main": "./lib/interface.js",
+  "name": "hello",
+  "version": "0.0.1",
+  "description": "say hello",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "geping",
+  "license": "ISC"
+}
